@@ -5,11 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
-    <script type="text/javascript" src="./js/app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./js/app.js" defer></script>
 </head>
 
 <body>
-    
+    <div class = "dim"></div>
+    <h1 class="title">Rock, Paper, Scissors</h1>
+    <p class="rules">Rock beats scissors. Paper beats rock. Scissors beats paper.<br>
+        First to five points wins.</p>
+    <div class="imgButton">
+        <button id="rockButton"><img src="images/rock.png" class="rock"></button>
+        <button id="paperButton"><img src="images/paper.png" class="paper"></button>
+        <button id="scissorsButton"><img src="images/scissors-yellow.png" class="scissors"></button>
+    </div>
+    <div class="roundSummaryContainer">
+        <p class="roundSummary">Select your move.</p>
+    </div>
+    <div class="scoreContainer">
+        <p class="playerScoreText">Player<br>Score:</p>
+        <div class="playerScoreNum">0</div>
+        <p class="computerScoreText">Computer<br>Score:</p>
+        <div class="computerScoreNum">0</div>
+    </div>
 </body>
 
 </html>
